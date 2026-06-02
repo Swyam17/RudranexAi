@@ -10,6 +10,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Michroma&family=Orbitron:wght@700;800&display=swap"
       rel="stylesheet"
@@ -18,43 +19,47 @@
   </head>
   <body>
     <div class="announcement">
-      <p>Rudranex AI: Student Mode, Coding, Interview Prep, and more &mdash; all in one.</p>
-      <a href="#access">Start Free</a>
+      <div class="announcement-inner">
+        <p>Rudranex AI: Student Mode, Coding, Interview Prep, and more &mdash; all in one.</p>
+        <a href="#access">Start Free</a>
+      </div>
     </div>
 
     <header class="header">
-      <a class="logo" href="#home" aria-label="Rudranex home">
-        <span class="logo-mark">
-          <img src="https://rudraomniversefrontend-pwv3.vercel.app/dark.svg" alt="" />
-        </span>
-        <svg class="wordmark" viewBox="0 0 448 48" aria-label="RUDRANEX" role="img">
-          <g class="wordmark-lines">
-            <path d="M4 8H38L44 14V23L38 29H4M4 8V40M25 29L44 40" />
-            <path d="M62 8V34L68 40H94L100 34V8" />
-            <path d="M120 8H148L160 18V30L148 40H120V8Z" />
-            <path d="M180 8H214L220 14V23L214 29H180M180 8V40M201 29L220 40" />
-            <path d="M236 40L256 8L276 40M246 28H266" />
-            <path d="M294 40V8L332 40V8" />
-            <path d="M354 8H392M354 24H384M354 40H392M354 8V40" />
-            <path d="M410 8L444 40M444 8L410 40" />
-          </g>
-        </svg>
-      </a>
+      <div class="header-inner">
+        <a class="logo" href="#home" aria-label="Rudranex home">
+          <span class="logo-mark">
+            <img src="https://rudraomniversefrontend-pwv3.vercel.app/dark.svg" alt="" />
+          </span>
+          <svg class="wordmark" viewBox="0 0 448 48" aria-label="RUDRANEX" role="img">
+            <g class="wordmark-lines">
+              <path d="M4 8H38L44 14V23L38 29H4M4 8V40M25 29L44 40" />
+              <path d="M62 8V34L68 40H94L100 34V8" />
+              <path d="M120 8H148L160 18V30L148 40H120V8Z" />
+              <path d="M180 8H214L220 14V23L214 29H180M180 8V40M201 29L220 40" />
+              <path d="M236 40L256 8L276 40M246 28H266" />
+              <path d="M294 40V8L332 40V8" />
+              <path d="M354 8H392M354 24H384M354 40H392M354 8V40" />
+              <path d="M410 8L444 40M444 8L410 40" />
+            </g>
+          </svg>
+        </a>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#support">Support</a>
-        <a href="#schools">Schools</a>
-        <a href="#access">Access</a>
-      </nav>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#support">Support</a>
+          <a href="#schools">Schools</a>
+          <a href="#access">Access</a>
+        </nav>
 
-      <div class="header-actions">
-        <a class="dark-btn" href="#access">Login / Sign Up <span>&nearr;</span></a>
-        <button class="menu" type="button" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="header-actions">
+          <a class="dark-btn" href="#access">Login / Sign Up <span>&nearr;</span></a>
+          <button class="menu" type="button" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -95,6 +100,41 @@
             <article><strong>Intelligence</strong><span>Systems that integrate seamlessly into the human experience.</span></article>
             <article><strong>Precision</strong><span>Clinical efficiency meets sophisticated AI architecture.</span></article>
             <article><strong>Impact</strong><span>High-performance tools for the world's leading minds.</span></article>
+          </div>
+
+          <div class="hero-live" aria-label="Live platform activity">
+            <div class="hero-live-top">
+              <span class="live-dot"></span>
+              <span class="live-label">Live on Rudranex</span>
+              <span class="live-count">12,400+ active today</span>
+            </div>
+            <div class="hero-live-avatars" aria-hidden="true">
+              <span style="background:linear-gradient(135deg,#667eea,#764ba2)">S</span>
+              <span style="background:linear-gradient(135deg,#f093fb,#f5576c)">A</span>
+              <span style="background:linear-gradient(135deg,#4facfe,#00f2fe)">R</span>
+              <span style="background:linear-gradient(135deg,#43e97b,#38f9d7)">P</span>
+              <span style="background:linear-gradient(135deg,#fa709a,#fee140)">K</span>
+              <span class="avatar-more">+12k</span>
+            </div>
+            <div class="hero-live-tracks">
+              <div class="live-track">
+                <div class="live-track-label"><span>Interview Prep</span><span>88%</span></div>
+                <div class="live-track-bar"><div style="width:88%"></div></div>
+              </div>
+              <div class="live-track">
+                <div class="live-track-label"><span>PDF Intelligence</span><span>72%</span></div>
+                <div class="live-track-bar"><div style="width:72%"></div></div>
+              </div>
+              <div class="live-track">
+                <div class="live-track-label"><span>Code Co-pilot</span><span>94%</span></div>
+                <div class="live-track-bar"><div style="width:94%"></div></div>
+              </div>
+            </div>
+            <div class="hero-live-footer">
+              <span>&#9733; 4.9/5 student rating</span>
+              <span>&#127968; Trusted across India</span>
+              <span>&#128274; Privacy-first AI</span>
+            </div>
           </div>
         </div>
 
@@ -318,7 +358,7 @@
         <div class="cards faq-grid">
           <article class="faq-card reveal"><h3>We Value Your Feedback</h3><p>Share your thoughts with us to help improve your experience.</p></article>
           <article class="faq-card reveal"><h3>For Schools</h3><p>Rudranex supports school access, B2B usage, and institution-ready AI workflows.</p></article>
-          <article class="faq-card reveal"><h3>Customer Support</h3><p>Technical Support: +91 97124 77777. Enterprise Queries: +91 63593 02924.</p></article>
+          <article class="faq-card reveal"><h3>Customer Support</h3><p>Technical Support: +91 97124 77777<br>Enterprise Queries: +91 63593 02924</p></article>
         </div>
       </section>
     </main>
