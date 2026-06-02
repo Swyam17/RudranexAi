@@ -9,8 +9,10 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.14 }
 );
 
-document.querySelectorAll(".reveal").forEach((item, index) => {
-  item.style.transitionDelay = `${Math.min(index % 3, 2) * 80}ms`;
+document.querySelectorAll(".reveal").forEach((item) => {
+  item.style.opacity = "1";
+  item.style.transform = "translateY(0)";
+  item.style.transitionDelay = "0ms";
   revealObserver.observe(item);
 });
 
