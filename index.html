@@ -10,355 +10,208 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Michroma&family=Orbitron:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Michroma&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=modern-distinct-2" />
   </head>
   <body>
-    <div class="announcement">
-      <div class="announcement-inner">
-        <p>Rudranex AI: Student Mode, Coding, Interview Prep, and more &mdash; all in one.</p>
-        <a href="#access">Start Free</a>
-      </div>
-    </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Rudranex home">
+        <span class="brand-mark">
+          <img src="https://rudraomniversefrontend-pwv3.vercel.app/dark.svg" alt="" />
+        </span>
+        <svg class="wordmark" viewBox="0 0 448 48" aria-label="RUDRANEX" role="img">
+          <g class="wordmark-lines">
+            <path d="M4 8H38L44 14V23L38 29H4M4 8V40M25 29L44 40" />
+            <path d="M62 8V34L68 40H94L100 34V8" />
+            <path d="M120 8H148L160 18V30L148 40H120V8Z" />
+            <path d="M180 8H214L220 14V23L214 29H180M180 8V40M201 29L220 40" />
+            <path d="M236 40L256 8L276 40M246 28H266" />
+            <path d="M294 40V8L332 40V8" />
+            <path d="M354 8H392M354 24H384M354 40H392M354 8V40" />
+            <path d="M410 8L444 40M444 8L410 40" />
+          </g>
+        </svg>
+      </a>
 
-    <header class="header">
-      <div class="header-inner">
-        <a class="logo" href="#home" aria-label="Rudranex home">
-          <span class="logo-mark">
-            <img src="https://rudraomniversefrontend-pwv3.vercel.app/dark.svg" alt="" />
-          </span>
-          <svg class="wordmark" viewBox="0 0 448 48" aria-label="RUDRANEX" role="img">
-            <g class="wordmark-lines">
-              <path d="M4 8H38L44 14V23L38 29H4M4 8V40M25 29L44 40" />
-              <path d="M62 8V34L68 40H94L100 34V8" />
-              <path d="M120 8H148L160 18V30L148 40H120V8Z" />
-              <path d="M180 8H214L220 14V23L214 29H180M180 8V40M201 29L220 40" />
-              <path d="M236 40L256 8L276 40M246 28H266" />
-              <path d="M294 40V8L332 40V8" />
-              <path d="M354 8H392M354 24H384M354 40H392M354 8V40" />
-              <path d="M410 8L444 40M444 8L410 40" />
-            </g>
-          </svg>
-        </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#access">Access</a>
+      </nav>
 
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-          <a href="#support">Support</a>
-          <a href="#schools">Schools</a>
-          <a href="#access">Access</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="dark-btn" href="#access">Login / Sign Up <span>&nearr;</span></a>
-          <button class="menu" type="button" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <a class="primary-btn" href="#access">Login / Sign Up</a>
+        <button class="menu" type="button" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
     <main id="home">
       <section class="hero section">
+        <div class="neural-field" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <i></i><i></i><i></i><i></i>
+        </div>
         <div class="hero-copy reveal">
-          <span class="hero-kicker">EST &bull; INDIA</span>
-          <h1>
-            <span class="hero-line">Rudranex AI</span>
-            <span class="hero-line">your cognitive</span>
-            <span class="hero-line accent-line">command layer.</span>
-          </h1>
-          <div class="hero-badges" aria-label="Rudranex focus areas">
+          <span class="eyebrow hero-pill">Rudranex AI workspace</span>
+          <h1>Learn faster, debug smarter, and prepare with an AI that tracks your growth.</h1>
+          <p>
+            A professional AI workspace for students, schools, and teams. Bring
+            PDFs, resumes, mock tests, code, vision inputs, and personalized practice
+            into one clear workflow.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#access">Start Free</a>
+            <a class="secondary-btn" href="#features">Explore Tools</a>
+          </div>
+          <div class="hero-tags" aria-label="Rudranex focus areas">
             <span>Student Mode</span>
             <span>Coding</span>
             <span>Interview Prep</span>
+            <span>PDF Intelligence</span>
           </div>
-          <p>
-            Systems that integrate seamlessly into the human experience. Clinical
-            efficiency meets sophisticated AI architecture. High-performance tools
-            for the world's leading minds.
-          </p>
-          <div class="hero-buttons">
-            <a class="dark-btn" href="#access">Start Free <span>&nearr;</span></a>
-            <a class="blue-btn" href="#features">Watch Demo</a>
-          </div>
-          <div class="console-strip" aria-label="Platform status">
-            <span><b></b>Adaptive engine online</span>
-            <span><b></b>PDF memory indexed</span>
-            <span><b></b>Interview model ready</span>
-          </div>
-          <div class="hero-microgrid" aria-label="Rudranex quick metrics">
-            <article><strong>99.8%</strong><span>System accuracy</span></article>
-            <article><strong>10ms</strong><span>Response latency</span></article>
-            <article><strong>8</strong><span>AI tools</span></article>
-          </div>
-          <div class="hero-meta" aria-label="Rudranex principles">
-            <article><strong>Intelligence</strong><span>Systems that integrate seamlessly into the human experience.</span></article>
-            <article><strong>Precision</strong><span>Clinical efficiency meets sophisticated AI architecture.</span></article>
-            <article><strong>Impact</strong><span>High-performance tools for the world's leading minds.</span></article>
-          </div>
-
-          <div class="hero-live" aria-label="Live platform activity">
-            <div class="hero-live-top">
-              <span class="live-dot"></span>
-              <span class="live-label">Live on Rudranex</span>
-              <span class="live-count">12,400+ active today</span>
+          <div class="trust-row" aria-label="Rudranex trust indicators">
+            <div class="trust-faces" aria-hidden="true">
+              <span>AI</span><span>PDF</span><span>CV</span>
             </div>
-            <div class="hero-live-avatars" aria-hidden="true">
-              <span style="background:linear-gradient(135deg,#667eea,#764ba2)">S</span>
-              <span style="background:linear-gradient(135deg,#f093fb,#f5576c)">A</span>
-              <span style="background:linear-gradient(135deg,#4facfe,#00f2fe)">R</span>
-              <span style="background:linear-gradient(135deg,#43e97b,#38f9d7)">P</span>
-              <span style="background:linear-gradient(135deg,#fa709a,#fee140)">K</span>
-              <span class="avatar-more">+12k</span>
-            </div>
-            <div class="hero-live-tracks">
-              <div class="live-track">
-                <div class="live-track-label"><span>Interview Prep</span><span>88%</span></div>
-                <div class="live-track-bar"><div style="width:88%"></div></div>
-              </div>
-              <div class="live-track">
-                <div class="live-track-label"><span>PDF Intelligence</span><span>72%</span></div>
-                <div class="live-track-bar"><div style="width:72%"></div></div>
-              </div>
-              <div class="live-track">
-                <div class="live-track-label"><span>Code Co-pilot</span><span>94%</span></div>
-                <div class="live-track-bar"><div style="width:94%"></div></div>
-              </div>
-            </div>
-            <div class="hero-live-footer">
-              <span>&#9733; 4.9/5 student rating</span>
-              <span>&#127968; Trusted across India</span>
-              <span>&#128274; Privacy-first AI</span>
-            </div>
+            <p><strong>23,000+</strong> learning sessions across study, code, resumes, and mock tests.</p>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Rudranex AI platform preview">
-          <div class="visual-label">RUDRANEX OS</div>
-          <div class="ai-stage">
-            <div class="scan-line" aria-hidden="true"></div>
-            <div class="node-map" aria-hidden="true">
-              <span class="node node-a"></span>
-              <span class="node node-b"></span>
-              <span class="node node-c"></span>
-              <span class="node node-d"></span>
-              <span class="path path-one"></span>
-              <span class="path path-two"></span>
-              <span class="path path-three"></span>
-            </div>
-            <div class="ai-core-card">
-              <span>AI</span>
-              <strong>Rudranex Engine</strong>
-              <p>Adaptive learning, code reasoning, PDF intelligence, and career prediction in one system.</p>
-            </div>
-            <div class="floating-chip chip-one">PDF Intelligence</div>
-            <div class="floating-chip chip-two">Interview Prep</div>
-            <div class="floating-chip chip-three">Code Co-pilot</div>
-            <div class="mini-terminal" aria-hidden="true">
-              <span>student.mode/init</span>
-              <span>resume.score: 92</span>
-              <span>mock.test/adaptive</span>
-            </div>
+        <div class="hero-panel reveal" aria-label="Rudranex AI command center">
+          <div class="panel-top">
+            <span><b></b> Rudranex AI System</span>
+            <strong>Adaptive mode online</strong>
           </div>
-          <div class="preview-card">
-            <p>Rudranex Console</p>
-            <h2>Eight quiet tools. One obvious advantage.</h2>
-            <div class="preview-grid">
-              <span>PDF Intelligence</span>
-              <span>Code Co-pilot</span>
-              <span>Vision AI</span>
-              <span>Mock Tests</span>
+          <div class="chat-stack">
+            <div class="chat-bubble user-bubble">How can I improve my resume for a software internship?</div>
+            <div class="chat-bubble ai-bubble">
+              <span class="ai-chip">AI</span>
+              <p>Start with project impact, measurable outcomes, and role keywords. I found 6 missing skills and 3 weak bullets.</p>
             </div>
+            <div class="floating-score">Score improved by 42%</div>
           </div>
-          <div class="flow-panel" aria-label="Rudranex learning flow">
-            <div>
-              <span>01</span>
-              <strong>Upload</strong>
-              <p>PDF, resume, GitHub link, or handwritten image.</p>
-            </div>
-            <div>
-              <span>02</span>
-              <strong>Analyze</strong>
-              <p>Find gaps, weak spots, keywords, and exact answers.</p>
-            </div>
-            <div>
-              <span>03</span>
-              <strong>Improve</strong>
-              <p>Practice with adaptive tests and focused feedback.</p>
-            </div>
+          <div class="rising-chart" aria-hidden="true">
+            <i style="--h: 30%"></i>
+            <i style="--h: 42%"></i>
+            <i style="--h: 54%"></i>
+            <i style="--h: 66%"></i>
+            <i style="--h: 80%"></i>
+            <i style="--h: 94%"></i>
           </div>
-          <div class="hero-insight-panel" aria-label="Rudranex learning signal">
-            <div class="insight-copy">
-              <span>Live learning signal</span>
-              <strong>From upload to improvement in one focused loop.</strong>
-              <p>Resume, PDF, code, vision, and mock-test data stay connected.</p>
-            </div>
-            <div class="signal-bars" aria-hidden="true">
-              <i style="--h: 42%"></i>
-              <i style="--h: 66%"></i>
-              <i style="--h: 52%"></i>
-              <i style="--h: 82%"></i>
-              <i style="--h: 70%"></i>
-              <i style="--h: 92%"></i>
-            </div>
+          <div class="flow-steps">
+            <article><span>01</span><strong>Upload</strong><p>PDF, resume, code, or image.</p></article>
+            <article><span>02</span><strong>Analyze</strong><p>Find gaps and exact answers.</p></article>
+            <article><span>03</span><strong>Improve</strong><p>Practice with focused feedback.</p></article>
           </div>
         </div>
       </section>
-      <section class="ticker" aria-label="Capabilities">
-        <div>
-          <span>Privacy First</span>
-          <span>Adaptive Practice</span>
-          <span>PDF Intelligence</span>
-          <span>Code Co-pilot</span>
-          <span>Vision AI</span>
-          <span>Career Path</span>
-          <span>Privacy First</span>
-          <span>Adaptive Practice</span>
-          <span>PDF Intelligence</span>
-          <span>Code Co-pilot</span>
-        </div>
+
+      <section class="stats section" aria-label="Rudranex metrics">
+        <article class="reveal"><strong data-count="99">0</strong><span>% System Accuracy</span></article>
+        <article class="reveal"><strong data-count="10">0</strong><span>ms Response Latency</span></article>
+        <article class="reveal"><strong data-count="8">0</strong><span>AI Tools</span></article>
+        <article class="reveal"><strong data-count="23000">0</strong><span>Learning Sessions</span></article>
       </section>
 
       <section class="section intro" id="features">
         <div class="section-heading reveal">
-          <span class="kicker">&sect; AI</span>
-          <span class="section-label">Capabilities &amp; Tools</span>
+          <span class="eyebrow">Capabilities</span>
           <h2>Eight quiet tools. One obvious advantage.</h2>
-          <p>
-            A complete, monochrome toolkit engineered to make you study smarter,
-            prepare faster, and ship better projects.
-          </p>
+          <p>A complete toolkit engineered to make you study smarter, prepare faster, and ship better projects.</p>
         </div>
-
-        <div class="cards tool-grid">
-          <article class="tool-card reveal"><span>Interview</span><h3>Tech Interview Simulator</h3><p>Practice live tech interviews with an AI that adapts in real time. DSA, system design, behavioural &mdash; all simulated with structured, instant feedback.</p></article>
-          <article class="tool-card reveal"><span>Career</span><h3>Resume Analyzer</h3><p>Upload your resume. Get ATS score, missing keywords, and role-specific rewrites for engineering and management tracks.</p></article>
-          <article class="tool-card reveal"><span>Silent</span><h3>Career Predictor</h3><p>Discover the career paths that fit you best &mdash; backed by deep ML on skills, projects and interviews.</p></article>
-          <article class="tool-card reveal"><span>Reading</span><h3>PDF Intelligence</h3><p>Stop reading 100-page textbooks. Chat with them, extract summaries, ask questions, and find exact answers instantly.</p></article>
-          <article class="tool-card reveal"><span>Practice</span><h3>Mock Tests</h3><p>Generate adaptive MCQs from any topic or file. Quizzes that actually adjust to your weak spots.</p></article>
-          <article class="tool-card reveal"><span>Code</span><h3>Code & GitHub</h3><p>Paste a GitHub link. Rudranex helps you debug, explain, refactor, or rewrite code line by line.</p></article>
-          <article class="tool-card reveal"><span>Vision</span><h3>Vision AI & Generation</h3><p>Snap handwritten math for step-by-step solutions, or describe an idea and let AI render visuals for your projects.</p></article>
-          <article class="tool-card reveal"><span>Memory</span><h3>Personalised Learning</h3><p>Your AI study companion remembers what you struggle with and crafts custom plans that move the needle.</p></article>
+        <div class="tool-grid">
+          <article class="tool-card reveal"><span>Interview</span><h3>Tech Interview Simulator</h3><p>Practice DSA, system design, and behavioral interviews with structured instant feedback.</p></article>
+          <article class="tool-card reveal"><span>Career</span><h3>Resume Analyzer</h3><p>Upload your resume for ATS score, missing keywords, and role-specific rewrites.</p></article>
+          <article class="tool-card reveal"><span>Path</span><h3>Career Predictor</h3><p>Discover fitting career paths based on skills, projects, and interview readiness.</p></article>
+          <article class="tool-card reveal"><span>Reading</span><h3>PDF Intelligence</h3><p>Chat with textbooks, extract summaries, ask questions, and find exact answers.</p></article>
+          <article class="tool-card reveal"><span>Practice</span><h3>Mock Tests</h3><p>Generate adaptive MCQs from any topic or file and target weak spots faster.</p></article>
+          <article class="tool-card reveal"><span>Code</span><h3>Code & GitHub</h3><p>Paste a GitHub link to debug, explain, refactor, or rewrite code line by line.</p></article>
+          <article class="tool-card reveal"><span>Vision</span><h3>Vision AI & Generation</h3><p>Snap handwritten math or describe an idea and create useful project visuals.</p></article>
+          <article class="tool-card reveal"><span>Memory</span><h3>Personalised Learning</h3><p>Your AI study companion remembers what you struggle with and builds better plans.</p></article>
         </div>
       </section>
 
-      <section class="section split-section">
-        <div class="reveal">
-          <span class="kicker">Our Philosophy</span>
-          <h2>Intelligence should be invisible yet omnipresent.</h2>
-        </div>
-        <div class="reveal">
-          <p>
-            At Rudranex, we believe the most powerful AI systems are those that
-            integrate seamlessly into the human experience. We aren't just building
-            tools; we are crafting the cognitive fabric of the next century.
-          </p>
-          <p>
-            Through rigorous research and radical innovation, we are pushing the
-            boundaries of what machines can perceive, understand, and create. Our
-            manifesto is simple: excellence without compromise.
-          </p>
-        </div>
-      </section>
-
-      <section class="stats-wrap">
-        <div class="section stats">
-          <article class="reveal"><strong data-count="99">0</strong><span>% System Accuracy</span></article>
-          <article class="reveal"><strong data-count="10">0</strong><span>ms Response Latency</span></article>
-          <article class="reveal"><strong data-count="8">0</strong><span>AI Tools</span></article>
-          <article class="reveal"><strong data-count="23000">0</strong><span>Learning Sessions</span></article>
-        </div>
-      </section>
-
-      <section class="section analytics" id="analytics" aria-label="Rudranex AI analytics">
+      <section class="section philosophy">
         <div class="section-heading reveal">
-          <span class="kicker">Live Intelligence</span>
-          <h2>Every tool feeds a sharper learning signal.</h2>
+          <span class="eyebrow">Our Philosophy</span>
+          <h2>One workspace for focused learning and better decisions.</h2>
+        </div>
+        <div class="philosophy-copy reveal">
           <p>
-            Rudranex turns interviews, resumes, PDFs, code, vision inputs, and mock
-            tests into a focused performance layer for students and teams.
+            Rudranex brings daily study, coding, interview preparation, and document
+            intelligence into one calm product experience. Every tool is designed to
+            reduce confusion and turn effort into measurable progress.
           </p>
+          <p>
+            The platform helps users upload, understand, practice, and improve with
+            clear feedback loops built for real academic and career workflows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section analytics" id="analytics">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Live Intelligence</span>
+          <h2>Every tool feeds a sharper learning signal.</h2>
+          <p>Rudranex turns interviews, resumes, PDFs, code, vision inputs, and mock tests into focused progress data.</p>
         </div>
         <div class="analytics-grid">
-          <article class="chart-card chart-wide reveal">
-            <div class="chart-head">
-              <span>Adaptive Practice</span>
-              <strong>Weak spot recovery</strong>
-            </div>
-            <div class="line-chart" aria-hidden="true">
-              <svg viewBox="0 0 520 180" role="img" aria-label="Rising learning chart">
-                <defs>
-                  <linearGradient id="lineFill" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35" />
-                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0" />
-                  </linearGradient>
-                </defs>
-                <path class="area" d="M20 145 C90 135 95 105 150 112 C210 120 215 74 275 84 C335 94 350 45 410 52 C455 58 480 34 500 24 L500 170 L20 170 Z" />
-                <path class="line" d="M20 145 C90 135 95 105 150 112 C210 120 215 74 275 84 C335 94 350 45 410 52 C455 58 480 34 500 24" />
-              </svg>
-            </div>
+          <article class="analytics-card large reveal">
+            <div class="card-head"><span>Adaptive Practice</span><strong>Weak spot recovery</strong></div>
+            <div class="line-visual" aria-hidden="true"></div>
           </article>
-          <article class="chart-card reveal">
-            <div class="chart-head">
-              <span>Toolkit Mix</span>
-              <strong>Usage by mode</strong>
-            </div>
-            <div class="bar-chart" aria-hidden="true">
-              <span style="--h: 72%"><i>PDF</i></span>
-              <span style="--h: 88%"><i>Code</i></span>
-              <span style="--h: 64%"><i>Mock</i></span>
-              <span style="--h: 78%"><i>Vision</i></span>
-              <span style="--h: 92%"><i>Interview</i></span>
-            </div>
+          <article class="analytics-card reveal">
+            <div class="card-head"><span>Tool Mix</span><strong>Usage by workflow</strong></div>
+            <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
           </article>
-          <article class="chart-card reveal">
-            <div class="chart-head">
-              <span>AI Pulse</span>
-              <strong>Signal quality</strong>
-            </div>
-            <div class="radial-chart" aria-hidden="true">
-              <div class="radial-core">99%</div>
-            </div>
+          <article class="analytics-card reveal">
+            <div class="card-head"><span>Precision</span><strong>99% platform score</strong></div>
+            <div class="score-ring" aria-hidden="true">99%</div>
           </article>
         </div>
       </section>
 
       <section class="section pricing" id="pricing">
         <div class="section-heading reveal">
-          <span class="kicker">&sect; Pricing</span>
-          <h2>Simple access for students, schools, and teams.</h2>
+          <span class="eyebrow">Pricing</span>
+          <h2>Start simple. Scale when you need more.</h2>
         </div>
-        <div class="cards price-grid">
-          <article class="price-card reveal"><span>Student Mode</span><h3>Start Free</h3><p>Adaptive MCQs, PDF intelligence, and personalised study support.</p></article>
+        <div class="price-grid">
+          <article class="price-card reveal"><span>Student Mode</span><h3>Start Free</h3><p>Adaptive MCQs, PDF intelligence, and personalized study support.</p></article>
           <article class="price-card featured reveal"><span>All-in-One</span><h3>Rudranex Pro</h3><p>Interview prep, resume analyzer, code co-pilot, vision AI, and memory.</p></article>
           <article class="price-card reveal" id="schools"><span>Institutions</span><h3>Schools & B2B</h3><p>Access for schools, B2B teams, clinical practitioners, and medical scholars.</p></article>
         </div>
       </section>
 
-      <section class="access section" id="access">
+      <section class="section access" id="access">
         <div class="access-panel reveal">
-          <span class="kicker">&sect; Access</span>
-          <span class="section-label">Global Access</span>
-          <h2>Ready to level up?</h2>
-          <p>Join thousands of students already moving faster, sharper, and quieter &mdash; with Rudranex AI.</p>
-          <a class="dark-btn" href="#">Get Started &mdash; Free &#9889;</a>
+          <span class="eyebrow">Global Access</span>
+          <h2>Build with Rudranex intelligence.</h2>
+          <p>Login, subscribe, and connect with Rudranex AI from one fast access point.</p>
+          <a class="primary-btn" href="mailto:hello@rudranex.ai">Get Started Free</a>
         </div>
       </section>
 
       <section class="section faq" id="faq">
         <div class="section-heading reveal">
-          <span class="kicker">FAQ</span>
-          <h2>Support for every Rudranex workflow.</h2>
+          <span class="eyebrow">FAQ</span>
+          <h2>Support that stays close to the work.</h2>
         </div>
-        <div class="cards faq-grid">
-          <article class="faq-card reveal"><h3>We Value Your Feedback</h3><p>Share your thoughts with us to help improve your experience.</p></article>
+        <div class="faq-grid">
+          <article class="faq-card reveal"><h3>Feedback</h3><p>Share your thoughts with us to help improve the Rudranex experience.</p></article>
           <article class="faq-card reveal"><h3>For Schools</h3><p>Rudranex supports school access, B2B usage, and institution-ready AI workflows.</p></article>
-          <article class="faq-card reveal"><h3>Customer Support</h3><p>Technical Support: +91 97124 77777<br>Enterprise Queries: +91 63593 02924</p></article>
+          <article class="faq-card reveal"><h3>Customer Support</h3><p>Technical Support: +91 97124 77777<br />Enterprise Queries: +91 63593 02924</p></article>
         </div>
       </section>
     </main>
@@ -366,8 +219,8 @@
     <footer class="footer" id="support">
       <div class="footer-grid section">
         <div>
-          <a class="logo footer-logo" href="#home">
-            <span class="logo-mark">
+          <a class="brand footer-brand" href="#home" aria-label="Rudranex home">
+            <span class="brand-mark">
               <img src="https://rudraomniversefrontend-pwv3.vercel.app/dark.svg" alt="" />
             </span>
             <svg class="wordmark" viewBox="0 0 448 48" aria-label="RUDRANEX" role="img">
@@ -383,47 +236,19 @@
               </g>
             </svg>
           </a>
-          <h3>AI CO-PILOT FOR THE CLINICAL MIND.</h3>
-          <p>Rudranex is an advanced AI co-pilot designed for clinical practitioners and medical scholars. Experience high-precision diagnostic support, interactive clinical battle arenas, and state-of-the-art medical resources.</p>
+          <p>AI co-pilot for students, schools, coding workflows, interviews, and future-ready teams.</p>
         </div>
-        <div>
-          <h3>Company</h3>
-          <a href="#features">About Us</a>
-          <a href="#faq">FAQ</a>
-          <a href="#support">Support</a>
-          <a href="#support">Contact Us</a>
-        </div>
-        <div>
-          <h3>Policy</h3>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Refund Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Copyright &amp; Disclaimer</a>
-        </div>
-        <div>
-          <h3>Platforms</h3>
-          <a href="#schools">For Schools</a>
-          <a href="#schools">For B2B</a>
-          <a href="#pricing">Pricing</a>
-          <h3>Feedback</h3>
-          <p>We Value Your Feedback. Share your thoughts with us to help improve your experience!</p>
-        </div>
-        <div>
-          <h3>Connect with Us</h3>
-          <p>Mail Us: hello@rudranex.ai</p>
-          <p>Rudra Labs, AI Innovation Center, Hyderabad, India.</p>
-          <p>Technical Support: +91 97124 77777</p>
-          <p>Enterprise Queries: +91 63593 02924</p>
-        </div>
+        <div><h3>Company</h3><a href="#features">Tools</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+        <div><h3>Platforms</h3><a href="#schools">Schools</a><a href="#analytics">Analytics</a><a href="#access">Access</a></div>
+        <div><h3>Connect</h3><a href="mailto:hello@rudranex.ai">hello@rudranex.ai</a><a href="tel:+919712477777">+91 97124 77777</a><a href="tel:+916359302924">+91 63593 02924</a></div>
       </div>
       <div class="footer-bottom section">
-        <span>&copy; 2026 Rudranex AI Systems. All rights reserved.</span>
-        <span>Terms of use &bull; Privacy Policies &bull; Copyright &amp; Disclaimer &bull; Refund Policy &bull; Cookie Policy</span>
+        <span>Rudra Labs, AI Innovation Center, Hyderabad, India</span>
+        <span>Rudranex AI. All rights reserved.</span>
       </div>
     </footer>
 
-    <a class="float-mail" href="mailto:hello@rudranex.ai" aria-label="Mail Rudranex">&#9993;</a>
-    <script src="script.js"></script>
+    <a class="float-mail" href="mailto:hello@rudranex.ai" aria-label="Mail Rudranex">@</a>
+    <script src="script.js?v=modern-distinct-2"></script>
   </body>
 </html>

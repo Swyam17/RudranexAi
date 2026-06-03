@@ -1,3 +1,29 @@
+const root = document.documentElement;
+const themeToggle = document.querySelector(".theme-toggle");
+const themeText = document.querySelector(".theme-text");
+
+const setTheme = (theme) => {
+  root.dataset.theme = theme;
+  localStorage.setItem("rudranex-theme", theme);
+  if (themeText) themeText.textContent = theme === "dark" ? "Light" : "Dark";
+};
+
+const savedTheme = localStorage.getItem("rudranex-theme");
+const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+setTheme(savedTheme || preferredTheme);
+
+themeToggle?.addEventListener("click", () => {
+  setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+});
+
+document.querySelector(".menu")?.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
+
+document.querySelectorAll(".nav a").forEach((link) => {
+  link.addEventListener("click", () => document.body.classList.remove("nav-open"));
+});
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -9,19 +35,9 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.14 }
 );
 
-document.querySelectorAll(".reveal").forEach((item) => {
-  item.style.opacity = "1";
-  item.style.transform = "translateY(0)";
-  item.style.transitionDelay = "0ms";
+document.querySelectorAll(".reveal").forEach((item, index) => {
+  item.style.transitionDelay = `${Math.min(index * 35, 220)}ms`;
   revealObserver.observe(item);
-});
-
-document.querySelector(".menu")?.addEventListener("click", () => {
-  document.body.classList.toggle("nav-open");
-});
-
-document.querySelectorAll(".nav a").forEach((link) => {
-  link.addEventListener("click", () => document.body.classList.remove("nav-open"));
 });
 
 const numberObserver = new IntersectionObserver(
@@ -31,7 +47,7 @@ const numberObserver = new IntersectionObserver(
       const element = entry.target;
       const target = Number(element.dataset.count);
       const start = performance.now();
-      const duration = 1200;
+      const duration = 1100;
 
       const tick = (now) => {
         const progress = Math.min((now - start) / duration, 1);
@@ -44,7 +60,7 @@ const numberObserver = new IntersectionObserver(
       numberObserver.unobserve(element);
     });
   },
-  { threshold: 0.65 }
+  { threshold: 0.55 }
 );
 
 document.querySelectorAll("[data-count]").forEach((item) => numberObserver.observe(item));
